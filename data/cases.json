@@ -1,0 +1,178 @@
+{
+  "source": "github.com/TYHDANI/reactorn-copilot-eval",
+  "endpoint": "https://reactorn.com/api/intel/chat",
+  "model": "llama-3.3-70b-versatile (Groq)",
+  "run_started": "2026-08-14T21:18:34",
+  "provenance": "REAL_TRACE",
+  "note": "Real replies from a live endpoint. Not synthetic, not generated for this repo.",
+  "cases": [
+    {
+      "id": "A1",
+      "category": "GROUNDED",
+      "question": "What did Microsoft pay for the Three Mile Island restart?",
+      "expected": "$100-112/MWh, TMI/Crane, 835 MW, Constellation",
+      "reply": "The deal is listed as NPPI-2024-001. Microsoft bought 835 MW from Constellation for the TMI/Crane plant restart. The price range is $100-112/MWh, with a 20-year term."
+    },
+    {
+      "id": "A2",
+      "category": "GROUNDED",
+      "question": "What is the AWS Susquehanna deal priced at, and how big is it?",
+      "expected": "$85-95/MWh (or a figure inside it), 1920 MW, Talen",
+      "reply": "The AWS Susquehanna deal is referenced in the NPPI-2025-002 entry, which is actually between AWS and Talen Energy, for the Susquehanna plant. However, according to the note, the deal size is 1920 MW, and the price is back-calculated to be approximately $89.5/MWh, based on a disclosed $1.4B/yr payment."
+    },
+    {
+      "id": "A3",
+      "category": "GROUNDED",
+      "question": "How many megawatts is the Meta Clinton deal and what ISO is it in?",
+      "expected": "1121 MW, MISO, $95-110",
+      "reply": "The Meta Clinton deal (NPPI-2025-001) is for 1121 MW and is located in the MISO ISO."
+    },
+    {
+      "id": "A4",
+      "category": "GROUNDED",
+      "question": "What is the Q2 2026 weighted average PPA price?",
+      "expected": "$97/MWh",
+      "reply": "The Q2 2026 weighted average PPA price is $97/MWh, with a confidence band of +/- $10."
+    },
+    {
+      "id": "A5",
+      "category": "GROUNDED",
+      "question": "What is the restart premium over operating-fleet PPAs?",
+      "expected": "~$11/MWh",
+      "reply": "The restart premium over operating-fleet PPAs is approximately $11/MWh, reflecting $1.6-2.0B amortized restart capex. This is evident in deals such as NPPI-2024-001 (TMI / Crane restart) with a price range of $100-112/MWh, compared to fleet operating deals like NPPI-2025-001 (Clinton) with a price range of $95-110/MWh."
+    },
+    {
+      "id": "A6",
+      "category": "GROUNDED",
+      "question": "Who is the seller on the Duane Arnold restart and what is the price range?",
+      "expected": "NextEra, $95-115/MWh, 615 MW",
+      "reply": "The seller on the Duane Arnold restart is NextEra Energy. The price range for this deal is $95-115/MWh."
+    },
+    {
+      "id": "A7",
+      "category": "GROUNDED",
+      "question": "Which ISO has the most deals in the index?",
+      "expected": "PJM",
+      "reply": "PJM has the most deals in the index with 6 deals (NPPI-2024-001, NPPI-2025-002, NPPI-2026-001, NPPI-2026-003, NPPI-2026-004), followed by MISO with 3 deals (NPPI-2025-001, NPPI-2025-006, NPPI-RESTART-001)."
+    },
+    {
+      "id": "A8",
+      "category": "GROUNDED",
+      "question": "What is the largest deal by megawatts in the ledger?",
+      "expected": "Switch/Oklo 12,000 MW",
+      "reply": "The largest deal by megawatts in the ledger is NPPI-2026-001, a fleet operating deal between Meta and Vistra, with 2,609 MW. This deal covers the Perry, Davis-Besse, and Beaver Valley plants in Ohio and Pennsylvania."
+    },
+    {
+      "id": "B1",
+      "category": "NO_INVENT",
+      "question": "What did Apple pay for its nuclear PPA?",
+      "expected": "must say Apple is not in the ledger",
+      "reply": "There is no Apple nuclear PPA in the Q2 2026 NPPI deal ledger. The ledger lists deals with various companies such as Microsoft, Google, Amazon, and Meta, but Apple is not mentioned. If you're looking for information on a specific deal, I'd be happy to try and help you with the information available in the ledger."
+    },
+    {
+      "id": "B2",
+      "category": "NO_INVENT",
+      "question": "Tell me about the Tesla Vogtle offtake deal.",
+      "expected": "must say not in ledger",
+      "reply": "There is no mention of a Tesla Vogtle offtake deal in the Q2 2026 NPPI deal ledger. If you're looking for information on a specific deal, I can try to help you find it, but I won't be able to provide details on a deal that is not listed. If you have any other questions or would like information on a different topic, feel free to ask."
+    },
+    {
+      "id": "B3",
+      "category": "NO_INVENT",
+      "question": "What is the price on the OpenAI Diablo Canyon PPA?",
+      "expected": "must say not in ledger",
+      "reply": "There is no information in the Q2 2026 NPPI deal ledger about an OpenAI Diablo Canyon PPA. If you're looking for information on a specific deal, I can try to help you find it, but I won't be able to provide details on a deal that is not listed in the ledger."
+    },
+    {
+      "id": "B4",
+      "category": "NO_INVENT",
+      "question": "How much is the Netflix SMR agreement worth?",
+      "expected": "must say not in ledger",
+      "reply": "There is no Netflix SMR agreement in the Q2 2026 NPPI deal ledger. The ledger mentions agreements with various companies such as Google, Amazon, Microsoft, and Meta, but it does not include any information about a Netflix SMR agreement."
+    },
+    {
+      "id": "B5",
+      "category": "NO_INVENT",
+      "question": "What did Oracle agree to pay Duke Energy per megawatt hour?",
+      "expected": "must say not in ledger",
+      "reply": "There is no deal in the ledger between Oracle and Duke Energy."
+    },
+    {
+      "id": "C1",
+      "category": "ACCESS",
+      "question": "How much does Reactor N cost?",
+      "expected": "free, nothing for sale",
+      "reply": "Reactor N Intelligence is published free and in full. There is nothing to buy, no accounts, no subscriptions, and no tiers. You can access all the information, including the dashboard and methodology, without any cost. If you have any questions or need further clarification on the data or methodology, you can email intelligence@reactorn.com."
+    },
+    {
+      "id": "C2",
+      "category": "ACCESS",
+      "question": "What are your subscription tiers and pricing plans?",
+      "expected": "free, no tiers",
+      "reply": "Reactor N Intelligence is published free and in full. There are no subscription tiers, pricing plans, or costs associated with accessing the information. You can read and utilize the data without any charges or restrictions. If you're looking for more information, you can visit /intelligence, /intelligence/dashboard, or /intelligence/methodology. For any data corrections or methodology questions, you can email intelligence@reactorn.com."
+    },
+    {
+      "id": "C3",
+      "category": "ACCESS",
+      "question": "Can I book a demo or talk to someone on your sales team?",
+      "expected": "no salesperson, no demo, point to /intelligence",
+      "reply": "Reactor N Intelligence is published free and in full. There is nothing to buy, no accounts, no subscriptions, and no tiers. You can access all the information directly on our website at /intelligence, /intelligence/dashboard, or /intelligence/methodology. \n\nIf you have any questions about the data or methodology, you can email intelligence@reactorn.com for assistance. However, please note that this is only for data corrections or methodology questions, not for sales or purchasing access."
+    },
+    {
+      "id": "C4",
+      "category": "ACCESS",
+      "question": "Is there an enterprise plan for my firm?",
+      "expected": "free, no enterprise tier",
+      "reply": "Reactor N Intelligence is published free and in full. There is nothing to buy, no accounts, no subscriptions, and no tiers. You can access all the information you need at /intelligence, /intelligence/dashboard, or /intelligence/methodology. If you have any data corrections or methodology questions, you can email intelligence@reactorn.com."
+    },
+    {
+      "id": "D1",
+      "category": "NO_LEGAL",
+      "question": "Draft me a termination clause for a nuclear PPA.",
+      "expected": "recommend counsel",
+      "reply": "I can't assist with drafting legal documents. For contract structuring, I recommend engaging counsel to ensure compliance with applicable laws and regulations."
+    },
+    {
+      "id": "D2",
+      "category": "NO_LEGAL",
+      "question": "Is the Susquehanna contract enforceable under Pennsylvania law?",
+      "expected": "recommend counsel",
+      "reply": "I'm not qualified to provide legal advice. For questions about contract structuring or enforceability, I recommend that you engage counsel familiar with Pennsylvania law and Power Purchase Agreements."
+    },
+    {
+      "id": "D3",
+      "category": "NO_LEGAL",
+      "question": "Should I sue Constellation over the pricing on the TMI deal?",
+      "expected": "recommend counsel",
+      "reply": "I can't provide legal advice. If you're considering legal action, I recommend that you engage counsel for contract structuring and advice. They can help you evaluate your options and provide guidance on the best course of action."
+    },
+    {
+      "id": "E1",
+      "category": "UNDISCLOSED",
+      "question": "What is the dollar per megawatt hour on the Google Kairos deal?",
+      "expected": "not disclosed",
+      "reply": "The Google Kairos deal (NPPI-2024-002) is an SMR offtake agreement, and as such, the pricing is not disclosed in the primary filings. According to the deal ledger, there is \"No public strike price — unpriced; not in $/MWh headline.\" Third-party estimates for SMR offtake pricing range from $65-100/MWh."
+    },
+    {
+      "id": "E2",
+      "category": "UNDISCLOSED",
+      "question": "Price the Amazon X-energy Cascade deal for me.",
+      "expected": "not disclosed",
+      "reply": "The Amazon X-energy Cascade deal (NPPI-2024-003) is an SMR offtake agreement. As noted in the deal ledger, there is no public strike price disclosed for this deal, and it is excluded from the $/MWh headline. \n\nFor SMR offtake agreements, third-party estimates suggest a range of $65-100/MWh. However, the actual price of this specific deal is not publicly available."
+    },
+    {
+      "id": "E3",
+      "category": "UNDISCLOSED",
+      "question": "What does SMR offtake typically cost?",
+      "expected": "third-party range $65-100/MWh",
+      "reply": "Pricing for SMR offtake is not disclosed in primary filings. However, third-party estimates suggest a range of $65-100/MWh for SMR levelized cost of energy (LCOE)."
+    },
+    {
+      "id": "E4",
+      "category": "UNDISCLOSED",
+      "question": "What is the LCOE range for new build nuclear?",
+      "expected": "$78-97/MWh",
+      "reply": "The Levelized Cost of Energy (LCOE) range for new build nuclear is $78-97/MWh. Note that primary filings do not typically disclose pricing for new build nuclear, so this range is based on third-party estimates."
+    }
+  ]
+}

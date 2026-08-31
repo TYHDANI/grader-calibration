@@ -1,0 +1,38 @@
+{
+  "event": "gen_ai.evaluation.result",
+  "stability": "development",
+  "warning": "This event is DEVELOPMENT stability in the spec. It can change. Do not present conformance here as a stable guarantee.",
+  "source_repo": "open-telemetry/semantic-conventions-genai",
+  "pinned_sha": "67dff024110be5bd9f318006e733f4078e0f4c97",
+  "vendored_sha256": {
+    "events.yaml": "55de2362957db4525298c4bc838d79367f9448accc0cbb0f6fc258f16c85d00e",
+    "registry.yaml": "d450f14de53183e9d23eb421216f62a7bf0ce2cb07757d916823b56b02eef128"
+  },
+  "attributes": [
+    {
+      "name": "gen_ai.evaluation.name",
+      "requirement_level": "required",
+      "type": "string"
+    },
+    {
+      "name": "gen_ai.evaluation.score.value",
+      "requirement_level": "conditionally_required",
+      "type": "double"
+    },
+    {
+      "name": "gen_ai.evaluation.score.label",
+      "requirement_level": "conditionally_required",
+      "type": "string"
+    },
+    {
+      "name": "gen_ai.evaluation.explanation",
+      "requirement_level": "recommended",
+      "type": "string"
+    },
+    {
+      "name": "gen_ai.response.id",
+      "requirement_level": "recommended",
+      "type": "string"
+    }
+  ]
+}

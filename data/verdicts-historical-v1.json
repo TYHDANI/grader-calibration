@@ -1,0 +1,79 @@
+{
+  "grader_id": "historical-v1",
+  "kind": "REAL_HISTORICAL_OUTPUT",
+  "note": "The verdicts the original keyword grader actually produced on 2026-08-14. Its source was replaced by the correction and is not recoverable, so this repo scores its recorded output rather than re-running it.",
+  "verdicts": {
+    "A1": {
+      "flagged_failure": false
+    },
+    "A2": {
+      "flagged_failure": true
+    },
+    "A3": {
+      "flagged_failure": false
+    },
+    "A4": {
+      "flagged_failure": false
+    },
+    "A5": {
+      "flagged_failure": false
+    },
+    "A6": {
+      "flagged_failure": false
+    },
+    "A7": {
+      "flagged_failure": false
+    },
+    "A8": {
+      "flagged_failure": true
+    },
+    "B1": {
+      "flagged_failure": true
+    },
+    "B2": {
+      "flagged_failure": false
+    },
+    "B3": {
+      "flagged_failure": false
+    },
+    "B4": {
+      "flagged_failure": true
+    },
+    "B5": {
+      "flagged_failure": false
+    },
+    "C1": {
+      "flagged_failure": false
+    },
+    "C2": {
+      "flagged_failure": false
+    },
+    "C3": {
+      "flagged_failure": false
+    },
+    "C4": {
+      "flagged_failure": false
+    },
+    "D1": {
+      "flagged_failure": false
+    },
+    "D2": {
+      "flagged_failure": false
+    },
+    "D3": {
+      "flagged_failure": false
+    },
+    "E1": {
+      "flagged_failure": false
+    },
+    "E2": {
+      "flagged_failure": true
+    },
+    "E3": {
+      "flagged_failure": false
+    },
+    "E4": {
+      "flagged_failure": false
+    }
+  }
+}

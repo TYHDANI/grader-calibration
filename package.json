@@ -1,0 +1,19 @@
+{
+  "name": "grader-calibration",
+  "version": "1.0.0",
+  "description": "Scores an LLM eval grader against human labels. The model is not what is under test.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "report": "node src/cli.ts report",
+    "cases": "node src/cli.ts cases",
+    "otel": "node src/cli.ts otel",
+    "build:corpus": "node scripts/build-corpus.mjs",
+    "build:semconv": "node scripts/extract-semconv.mjs",
+    "test": "node --test \"test/*.test.ts\""
+  },
+  "license": "MIT"
+}
