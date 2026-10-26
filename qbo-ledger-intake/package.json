@@ -1,0 +1,26 @@
+{
+  "name": "qbo-ledger-intake",
+  "version": "0.1.0",
+  "description": "Photo of a handwritten payments ledger -> Claude -> reviewed Payment records in QuickBooks Online.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "auth": "node src/cli.ts auth",
+    "review": "node src/cli.ts review",
+    "post": "node src/cli.ts post",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test \"test/*.test.ts\""
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.0"
+  },
+  "license": "MIT"
+}
